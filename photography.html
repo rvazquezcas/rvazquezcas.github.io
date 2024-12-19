@@ -8,48 +8,90 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
+      background-color: black; 
+      color: white;
       padding: 0;
     }
     header {
-      background-color: #d75a4a;
-      color: white;
+      background-color: goldenrod;
+      color: black;
       padding: 20px;
       text-align: center;
     }
     section {
       margin: 20px;
     }
-    h1, h2 {
-      color: #d75a4a;
-    }
-    .gallery {
+    .series-container{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
     }
-    .gallery img {
+    .series{
+      text-align: center;
+      border: 2px solid goldenrod;
+      padding: 10px;
+      background-color: #333;
+      transition: transform 0.3s ease-in-out;
+    }
+    .series:hover{
+      transform: scale(1.05);
+    }
+    .series img{
       width: 100%;
       height: auto;
-      border: 2px solid #d75a4a;
+      max-height: 150px;
+      object-fit: cover;
+    }
+    .series SuburbanDreamscape {
+      text-decoration: none;
+      color: goldenrod;
+      font-weight: bold;
+      display: black;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #222;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Photography</h1>
+    <h1>Raul Vazquez Photography</h1>
+    <p> Welcome to my photography webpage. Feel free to explore my work.</p>
   </header>
   <section>
-    <h2>My Portfolio</h2>
-    <p>I enjoy capturing the world through my lens. Here are some of my favorite photographs.</p>
-    <div class="gallery">
-      <img src="photo1.jpg" alt="Photo 1">
-      <img src="photo2.jpg" alt="Photo 2">
-      <img src="photo3.jpg" alt="Photo 3">
-      <!-- Add more photos as needed -->
+    <h2> About Me: </h2>
+    <p> I am an amateur photographer based (for the moment) in Toulouse, France. I started with photography in 2020 and have been doing
+    it since. I am passionate about photographing urban and suburban landscapes, nature, and life in the city. I mostly photograph in 
+    the cities I travel to. I am mostly interested in capturing those hidden spots of the cities, where I believe the true nature and 
+    and soul of them lies. I am seen mostly seeking the dark alleyways, always on the lookout for that interplay between the light and 
+    the shadows to which I am attracted to. Enjoy!
+    </p>
+  </section>
+  <section>
+    <h2> In the Heart of the City </h2>
+    <div class="series-container">
+      
+      <div class="series">
+        <img src="HeartOfTheCity/Grafitti1.png" alt="Heart Of The City">
+        <a href="HeartOfTheCity.html">Heart Of The City</a>
+      </div>
+      
+      <div class="series">
+        <img src"SuburbianDreamscapes/Reykjavik1.png" alt="Suburbian Dreams">
+        <a href="SuburbianDreamscapes.html">Suburbian Dreams</a>
+      </div>
+
+      <div class="series">
+        <img src"Ripples/Water.png" alt="Ripples">
+        <a href="Ripples.html">Ripples</a>
+      </div>
     </div>
   </section>
+  
   <footer>
-    <p>&copy; 2024 Your Name</p>
+    <p>&copy; 2024 Raul Vazquez Casique</p>
   </footer>
 </body>
 </html>
